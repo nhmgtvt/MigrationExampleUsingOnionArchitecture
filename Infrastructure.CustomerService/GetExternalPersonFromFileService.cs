@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.CustomerService
 {
-    public class GetExternalCustomerFromFileService : IGetExternalSourcesService<ExternalCustomer>
+    public class GetExternalPersonFromFileService : IGetExternalSourcesService<ExternalCustomer>
     {
         private readonly IFileRead _file;
-        public GetExternalCustomerFromFileService(IFileRead file)
+        public GetExternalPersonFromFileService(IFileRead file)
         {
             _file = file;
         }

@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.CustomerService
 {
-    public class CustomerProcessingService : IProcessingService
+    public class PersonProcessingService : IProcessingService
     {
-        private readonly IMappingService<BasicCustomer, ExternalCustomer> _customerMap;
+        private readonly IMappingService<Person, ExternalCustomer> _customerMap;
         private readonly IGetExternalSourcesService<ExternalCustomer> _getExternalCustomerFromFileService;
-        private readonly ISortingService<BasicCustomer> _sortingServices;
-        private readonly ICustomerRepositorySave _repository;
-        public CustomerProcessingService(IGetExternalSourcesService<ExternalCustomer> getExternalCustomerFromFileService , IMappingService<BasicCustomer, ExternalCustomer> customerMap 
-                                            , ISortingService<BasicCustomer> sortingService, ICustomerRepositorySave repository)
+        private readonly ISortingService<Person> _sortingServices;
+        private readonly IPersonRepositorySave _repository;
+        public PersonProcessingService(IGetExternalSourcesService<ExternalCustomer> getExternalCustomerFromFileService , IMappingService<Person, ExternalCustomer> customerMap 
+                                            , ISortingService<Person> sortingService, IPersonRepositorySave repository)
         {
             _customerMap = customerMap;
             _getExternalCustomerFromFileService = getExternalCustomerFromFileService;

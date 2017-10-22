@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Infrastructure.CustomerServiceTests
 {
     [TestClass()]
-    public class CustermerProcessingServiceTests
+    public class PersonrProcessingServiceTests
     {
         [TestMethod()]
         public void ProcessTests()

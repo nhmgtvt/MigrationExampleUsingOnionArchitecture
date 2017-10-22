@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 namespace Infrastructure.CustomerService.Tests
 {
     [TestClass()]
-    public class CustomerMappingServiceTests
+    public class PersonMappingServiceTests
     {
         [TestMethod()]
         public void MapTest()
         {
             //Arrange
-            var service = new CustomerMappingService();
+            var service = new PersonMappingService();
             var externalCustomer = new ExternalCustomer { FullName = "dgh dsjf ther" };
             //Act
             var test = service.Map(externalCustomer);

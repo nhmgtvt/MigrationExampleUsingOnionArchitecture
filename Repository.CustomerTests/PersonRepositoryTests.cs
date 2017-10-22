@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Repository.Customer.Tests
 {
     [TestClass()]
-    public class CustomerRepositoryTests
+    public class PersonRepositoryTests
     {
         [TestMethod()]
         public void SaveAllTest()
@@ -18,7 +18,7 @@ namespace Repository.Customer.Tests
             //arrange
             var mockFileWrite = new MockFileWrite();
             var testRepository = new CustomerRepository.CustomerFileRepository(mockFileWrite);
-            var contents = new List<Domain.Entities.BasicCustomer> { new Domain.Entities.BasicCustomer { GivenNames = "aaa", LastName = "bbb" } };
+            var contents = new List<Domain.Entities.Person> { new Domain.Entities.Person { GivenNames = "aaa", LastName = "bbb" } };
             
             //act
             var result = testRepository.SaveAll(contents);

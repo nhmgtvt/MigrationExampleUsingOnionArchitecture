@@ -62,9 +62,9 @@
       <Project>{d616da0a-2145-4f9a-9d27-ed7f8a306498}</Project>
       <Name>DomainServices.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.CustomerService\Infrastructure.CustomerService.csproj">
+    <ProjectReference Include="..\Infrastructure.CustomerService\Infrastructure.PersonService.csproj">
       <Project>{808f0498-b5e4-401b-9422-57a144f46185}</Project>
-      <Name>Infrastructure.CustomerService</Name>
+      <Name>Infrastructure.PersonService</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infrastructure.FileIO\Infrastructure.FileIO.csproj">
       <Project>{a4c46111-0f4b-4220-9396-44cbf67a4fc1}</Project>

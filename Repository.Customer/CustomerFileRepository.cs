@@ -9,14 +9,14 @@ using Infrastructure.FileIO;
 
 namespace Repository.CustomerRepository
 {
-    public class CustomerFileRepository : ICustomerRepositorySave
+    public class CustomerFileRepository : IPersonRepositorySave
     {
         private readonly IFileWrite _file;
         public CustomerFileRepository(IFileWrite file)
         {
             _file = file;
         }
-        public bool SaveAll(IEnumerable<BasicCustomer> customers)
+        public bool SaveAll(IEnumerable<Person> customers)
         {
             if (customers != null)
             {

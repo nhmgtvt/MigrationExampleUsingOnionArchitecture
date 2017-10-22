@@ -27,16 +27,16 @@ namespace SolvedByOnionArchitecture
             else
                 filePath = String.Format("{0}/{1}", Environment.CurrentDirectory, "unsorted-names-list.txt");
             var fileRead = new FileRead(filePath);
-            var getExternalService = new GetExternalCustomerFromFileService(fileRead);
+            var getExternalService = new GetExternalPersonFromFileService(fileRead);
 
-            var mappingService = new CustomerMappingService();
+            var mappingService = new PersonMappingService();
 
-            var sortingService = new CustomerSortingService();
+            var sortingService = new PersonSortingService();
 
             var fileWrite = new FileWrite(String.Format("{0}/{1}", Environment.CurrentDirectory, "sorted-names-list.txt"));
             var repository = new CustomerFileRepository(fileWrite);
 
-            var process = new CustomerProcessingService(getExternalService, mappingService, sortingService,repository);
+            var process = new PersonProcessingService(getExternalService, mappingService, sortingService,repository);
             process.Process();
 
             //end process

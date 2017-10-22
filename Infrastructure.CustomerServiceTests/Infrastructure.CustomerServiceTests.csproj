@@ -51,9 +51,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CustermerProcessingServiceTests.cs" />
-    <Compile Include="CustomerMappingServiceTests.cs" />
-    <Compile Include="GetExternalCustomerFromFileServiceTests.cs" />
+    <Compile Include="PersonrProcessingServiceTests.cs" />
+    <Compile Include="PersonMappingServiceTests.cs" />
+    <Compile Include="GetExternalPersonFromFileServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,9 +69,9 @@
       <Project>{d616da0a-2145-4f9a-9d27-ed7f8a306498}</Project>
       <Name>DomainServices.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.CustomerService\Infrastructure.CustomerService.csproj">
+    <ProjectReference Include="..\Infrastructure.CustomerService\Infrastructure.PersonService.csproj">
       <Project>{808F0498-B5E4-401B-9422-57A144F46185}</Project>
-      <Name>Infrastructure.CustomerService</Name>
+      <Name>Infrastructure.PersonService</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infrastructure.FileIO\Infrastructure.FileIO.csproj">
       <Project>{A4C46111-0F4B-4220-9396-44CBF67A4FC1}</Project>

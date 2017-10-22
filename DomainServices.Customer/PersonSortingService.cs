@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Service.Interfaces.Domain_Services
 {
-    public class CustomerSortingService : ISortingService<BasicCustomer>
+    public class PersonSortingService : ISortingService<Person>
     {
-        public IEnumerable<BasicCustomer> Sort(IEnumerable<BasicCustomer> customers)
+        public IEnumerable<Person> Sort(IEnumerable<Person> customers)
         {
             return customers.OrderBy(customer => customer.LastName).ThenBy(customer => customer.GivenNames);
         }

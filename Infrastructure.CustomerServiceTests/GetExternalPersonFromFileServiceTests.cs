@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 namespace Infrastructure.CustomerServiceTests
 {
     [TestClass()]
-    public class GetExternalCustomerFromFileServiceTests
+    public class GetExternalPersonFromFileServiceTests
     {
         [TestMethod()]
         public void GetExternalSourcesTests()
         {
             //arrange
             var mockFileRead = new MockFileRead();
-            var test = new GetExternalCustomerFromFileService(mockFileRead);
+            var test = new GetExternalPersonFromFileService(mockFileRead);
 
             //act
             var testResult = test.GetExternalSources();

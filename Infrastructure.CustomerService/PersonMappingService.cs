@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.CustomerService
 {
-    public class CustomerMappingService : IMappingService<BasicCustomer, ExternalCustomer>
+    public class PersonMappingService : IMappingService<Person, ExternalCustomer>
     {
-        public BasicCustomer Map(ExternalCustomer externalCustomer)
+        public Person Map(ExternalCustomer externalCustomer)
         {
-            var customer = new BasicCustomer();
+            var customer = new Person();
             customer.LastName = externalCustomer.FullName.Split().Last();
             customer.GivenNames = externalCustomer.FullName.Remove(externalCustomer.FullName.Length - customer.LastName.Length).TrimEnd();
             return customer;

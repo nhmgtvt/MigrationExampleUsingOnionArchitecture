@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.ReporitoryInterfaces
 {
-    public interface ICustomerRepositorySave : IBaseRepositorySave<BasicCustomer>
+    public interface IPersonRepositorySave : IBaseRepositorySave<Person>
     {
     }
 }

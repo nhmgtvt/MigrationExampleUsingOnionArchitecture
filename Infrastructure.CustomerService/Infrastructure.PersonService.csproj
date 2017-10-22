@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerMappingService.cs" />
-    <Compile Include="CustomerProcessingService.cs" />
+    <Compile Include="PersonMappingService.cs" />
+    <Compile Include="PersonProcessingService.cs" />
     <Compile Include="ExternalCustomer.cs" />
-    <Compile Include="GetExternalCustomerFromFileService.cs" />
+    <Compile Include="GetExternalPersonFromFileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
